@@ -2,7 +2,7 @@ import React from "react"
 import { shape, ProfileType } from "../../types"
 
 const Summary = ({ profile }) => (
-    <div className="flex flex-col-reverse md:flex-row mb-6">
+    <div className="flex flex-col-reverse md:flex-row mb-16">
         <div className="md:w-5/12 flex-grow pr-4 text-lg md:text-xl md:leading-9">
             { profile.about }     
         </div>

@@ -4,7 +4,7 @@ import { ProfileType } from "../../types"
 import PluralsightSvg from "./icons/Pluralsight.svg"
 
 const Skills = ({ skills, pluralsightProfile }) => (
-    <div className="mb-10">
+    <div className="mb-16">
         <div className="flex items-center mb-10">
             <h5 className="mr-3 inline-block leading-3 shadow-underline">TOP SKILLS</h5>
             <span className="leading-none flex-grow border-b-2 border-gray-400"></span>

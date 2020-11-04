@@ -12,12 +12,13 @@ const Header = () => (
       </ul>
       
       <a
+        alt="Send an email"
         className="font-header font-semibold
                   px-6 py-2 rounded-sm
                   bg-lead text-lead-text leading-tight
                   hover:opacity-75 transition-opacity duration-150"
 
-        href="#contact"
+        href="mailto:barahonajm@outlook.com"
       >
         <span>Contact me</span>
       </a>
