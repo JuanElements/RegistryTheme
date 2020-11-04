@@ -1,0 +1,8 @@
+/* Vertical line */
+.history:before {
+    @apply .absolute .bottom-0 .bg-line;
+    top: 60px;
+    width: 2px;
+    transform: translateX(calc((0.75rem / 2) - 1px));
+    content: "";
+  }

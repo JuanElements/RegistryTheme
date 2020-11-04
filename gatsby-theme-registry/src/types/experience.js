@@ -2,19 +2,19 @@ import { graphql } from "gatsby"
 import { string, arrayOf , shape, object } from "prop-types"
 
 
-export const Timeline = {
+export const TimelineType = {
     title: string,
     start: string,
     end: string,
 }
 
-export const Experience = {
+export const ExperienceType = {
     logo: shape({
         childImageSharp: object.isRequired,
         publicURL: string.isRequired
     }),
     postion: string,
-    timeline: arrayOf(Timeline),
+    timeline: arrayOf(TimelineType),
 }
 
 export const query = graphql`
@@ -22,7 +22,7 @@ export const query = graphql`
         logo {
             childImageSharp {
                 fixed(width: 43, height: 43, quality: 90) {
-                    ...GatsbyImageSharpFixedd_withWebp
+                    ...GatsbyImageSharpFixed_withWebp
                 }
             }
         }

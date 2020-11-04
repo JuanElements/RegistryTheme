@@ -8,10 +8,10 @@ import MainContent from "../components/main-content/main-content"
 import "../styles/style.css"
 
 const IndexPage = ({data}) => {
-    const { profile } = data
+    const { profile, experience } = data
 
     return (
-    <div className="antialiased h-screen bg-back leading-normal font-text text-front">
+    <div className="antialiased min-h-full bg-back bg-fixed leading-normal font-text text-front">
         <SEO />
         <CustomFonts />
   
@@ -20,7 +20,7 @@ const IndexPage = ({data}) => {
         <div className="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap pt-4 my-8">
           <Sidebar profile={profile} />
 
-          <MainContent profile={profile} />
+          <MainContent profile={profile} experience={experience.nodes} />
 
         </div>
     </div>
@@ -34,6 +34,11 @@ export const query = graphql`
   query {
     profile: profileYaml {
       ...ProfileFragment
+    }
+    experience: allExperienceYaml {
+      nodes {
+        ...ExperienceFragment
+      }
     }
   }
 `
