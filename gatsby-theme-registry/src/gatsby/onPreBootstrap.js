@@ -15,7 +15,10 @@ module.exports = ({ reporter }, options) => {
 
         const filesToCopy = [
             "profile.yaml",
-            "images/profile.jpg"
+            "experience.yaml",
+            "social.yaml",
+            "images/profile.jpg",
+            "images/jalasoft.png"
         ]
 
         filesToCopy.forEach(file => 
