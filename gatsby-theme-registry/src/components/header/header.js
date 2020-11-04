@@ -1,9 +1,16 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Header = () => (
 
     <header className="md:max-w-screen-sm lg:max-w-screen-xl lg:px-8
-                       mx-auto flex justify-end p-4">
+                       mx-auto flex justify-end items-center p-4">
+      
+      <ul className="mr-5 flex font-header">
+        <li className="mr-5" ><Link to="/" activeClassName="border-b-2 border-black">Home</Link></li>
+        <li>Blog</li>
+      </ul>
+      
       <a
         className="font-header font-semibold
                   px-6 py-2 rounded-sm

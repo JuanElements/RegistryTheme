@@ -1,10 +1,11 @@
 import React from "react"
 import Location from "./location"
 import ProfileImage from "./profile-image"
-import { shape, ProfileType } from "../../types"
-//import SocialLinks from "../social-links/social-links"
+import SocialLinks from "../social/social-links"
+import { ProfileType, SocialType } from "../../types"
+import { arrayOf, shape } from "prop-types"
 
-const Sidebar = ({ profile }) => (
+const Sidebar = ({ profile, social }) => (
   <aside className="w-full lg:w-1/3 lg:border-r border-line lg:px-6 xl:px-12">
     <div className="flex flex-col h-full justify-between">
       <div>
@@ -24,6 +25,8 @@ const Sidebar = ({ profile }) => (
             relocation={profile.relocation}
           />
         )}
+
+        <SocialLinks social={social} />
       </div>
     </div>
   </aside>
@@ -31,7 +34,7 @@ const Sidebar = ({ profile }) => (
 
 Sidebar.propTypes = {
   profile: shape(ProfileType),
-  //social: arrayOf(shape(SocialType)),
+  social: arrayOf(shape(SocialType)),
 }
 
-export default Sidebar
+export default Sidebar 
