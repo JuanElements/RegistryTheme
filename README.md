@@ -27,3 +27,6 @@ To modify the information of the page:
 1. Go to the `📁Site` folder
 2. You will see a `📁Content` folder where you can modify any information about the page 
 
+## Credits and references
+
+This theme was inpired by [gatsby-theme-intro](https://github.com/wkocjan/gatsby-theme-intro)
