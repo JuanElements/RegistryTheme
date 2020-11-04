@@ -15,7 +15,8 @@ export const ProfileType = {
         childImageSharp: object.isRequired,
         publicURL: string.isRequired
     }),
-    skills: arrayOf(string).isRequired
+    skills: arrayOf(string).isRequired,
+    pluralsightProfile: string.isRequired,
 }
 
 export const query = graphql`
@@ -37,5 +38,6 @@ export const query = graphql`
             publicURL
         }
         skills
+        pluralsightProfile
     }
 `
