@@ -1,27 +1,33 @@
 - logo: images/jalasoft.png
   position: Employee
+  duration: 3 years, 1 month
   timeline:
     - title: Staff Software Developer
       start: March 2019
       end: March 2020
+      duration: 1 year
     - title: JCE Software Developer
       start: March 2018
       end: March 2019
+      duration: 1 year
     - title: Junior Software Developer
       start: March 2017
       end: March 2018
+      duration: 1 year
       
 - logo: images/jalasoft.png
   position: trainer
+  duration: 1 year
   timeline:
     - title: C# Intermediate Course
-      start: September 2020
-      end: November 2020
+      start: September 2019
+      end: November 2019
+      duration: 3 months
     - title: Java Fundamentals Course
-      start: October 2020
-      end: November 2020
+      start: October 2019
+      end: November 2019
+      duration: 2 months
     - title: Softure Program
       start: April 2020
-      end: July 2020    
-
-  
+      end: July 2020
+      duration: 3 months    

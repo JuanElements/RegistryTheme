@@ -18,7 +18,7 @@ const Header = () => (
                   bg-lead text-lead-text leading-tight
                   hover:opacity-75 transition-opacity duration-150"
 
-        href="mailto:barahonajm@outlook.com"
+        href="mailto:barahonajm@outlook.com?subject=I would like talk with you"
       >
         <span>Contact me</span>
       </a>

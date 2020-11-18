@@ -6,6 +6,7 @@ export const TimelineType = {
     title: string,
     start: string,
     end: string,
+    duration: string,
 }
 
 export const ExperienceType = {
@@ -14,6 +15,7 @@ export const ExperienceType = {
         publicURL: string.isRequired
     }),
     postion: string,
+    duration: string,
     timeline: arrayOf(TimelineType),
 }
 
@@ -27,10 +29,12 @@ export const query = graphql`
             }
         }
         position
+        duration
         timeline {
-            title,
-            start,
+            title
+            start
             end
+            duration
         }
     }
 `

@@ -10,7 +10,7 @@ const Experience = ({ experience }) => (
             <Img fixed={experience.logo.childImageSharp.fixed} />
             <div className="ml-2">
                 <h4 className="font-header font-bold text-lg leading-6"> { experience.position }</h4>
-                <h5 className="font-header text-lg leading-5 text-gray-600"> 3 years, 1 month </h5>
+                <h5 className="font-header text-lg leading-5 text-gray-600"> { experience.duration }</h5>
             </div>
         </div>
         <div className="flex flex-col ml-3">
@@ -21,7 +21,7 @@ const Experience = ({ experience }) => (
                     </span>
                     <div className="ml-4 ">
                         <h4 className="font-header font-semibold text-lg text-gray-800 leading-4">{item.title}</h4>
-                        <h5 className="font-header font-light text-base leading-6 text-gray-600">{item.start} - {item.end} · 1 year, 1 month </h5>
+                        <h5 className="font-header font-light text-base leading-6 text-gray-600">{item.start} - {item.end} · {item.duration}</h5>
                     </div>
                 </div>
             ))}
